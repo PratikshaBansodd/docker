@@ -1,0 +1,7 @@
+ apt install docker.io -y
+   15  service docker status
+   16  ifconfig
+   17  apt install iputils
+   18  docker pull ubuntu
+   19  docker images
+   20  history
