@@ -8,3 +8,44 @@ apt install docker.io -y
    18  docker pull ubuntu
    19  docker images
    20  history
+
+
+data visulaization history
+ 1  yum install docker -y
+    2  service docker start
+    3  vim Dockerfile
+    4  docker build -t apache .
+    5  vim index.html
+    6  docker build -t apache .
+    7  history
+    8  vim Dockerfile
+    9  docker run -itd --name c1 -p 81:80 apache
+   10  docker ps
+   11  cat index.html
+   12  vim index.html
+   13  docker build -t apache1 .
+   14  docker images
+   15  docker run -itd --name c3 -p 90:80 apache1
+   16  docker ps
+   17  docker ps -a
+   18  docker pull jenkins/jenkins:lts
+   19  docker images
+   20  docker run ubuntu
+   21  docker ps -a
+   22  docker run --name cont1 ubuntu
+   23  docker ps -a
+   24  docker run -it --name cont2 ubuntu
+   25  docker images
+   26  docker commit c5589fa2f54a swiggy
+   27  docker commit cont2 swiggy
+   28  docker run -it --name cont4 amazonlinux
+   29  vim Dockerfile
+   30  docker build -t swiggy:v2
+   31  ps -a
+   32  ls
+   33  cat Dockerfile
+   34  vim Dockerfile
+   35  docker build -t apache2 .
+   36  vim Dockerfile
+   37  docker build -t apache2 .
+   38  history
